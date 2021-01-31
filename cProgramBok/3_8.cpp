@@ -1,0 +1,26 @@
+// 3_8 
+// Uses constexpr
+
+#include <iostream>
+using namespace std;
+
+constexpr double GetPi() {
+	return 22.0 /7;
+}
+
+constexpr double TwicePi()
+{
+	return 2 * GetPi();
+}
+
+int main()
+{
+	const double pi = 22.0 / 7;
+	
+	cout << "constant pi contains  value " << pi  << endl;
+	cout << "constexpr GetPi() returns value " << GetPi() << endl;
+	cout << "constexpr TwicePi() returns value " << TwicePi() << endl;
+	
+	return 0;
+	
+}
